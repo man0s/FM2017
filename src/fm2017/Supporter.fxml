@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="668.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FM2017.SupporterController">
+    <children>
+      <VBox prefHeight="668.0" prefWidth="40.0" />
+        <VBox prefHeight="668.0" prefWidth="742.0">
+            <children>
+                <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="742.0" text="Previous Games" textAlignment="CENTER" textFill="white">
+                    <font>
+                        <Font name="Arial" size="35.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="prevtable" prefHeight="238.0" prefWidth="742.0">
+                    <columns>
+                        <TableColumn fx:id="prevseen" prefWidth="65.0" text="Seen" />
+                        <TableColumn fx:id="prevdate" prefWidth="96.0" text="Date" />
+                        <TableColumn fx:id="prevscorers" prefWidth="431.0" text="Scorers" />
+                        <TableColumn fx:id="prevscore" prefWidth="129.0" text="Score" />
+                    </columns>
+                </TableView>
+                <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="742.0" text="Upcoming Games" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="35.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="upcotable" layoutX="10.0" layoutY="102.0" prefHeight="231.0" prefWidth="742.0">
+                    <columns>
+                        <TableColumn fx:id="upcodate" prefWidth="131.0" text="Date" />
+                        <TableColumn fx:id="upcotime" prefWidth="86.0" text="Time" />
+                        <TableColumn fx:id="upcostadium" prefWidth="205.0" text="Stadium" />
+                        <TableColumn fx:id="upcoreferees" prefWidth="298.0" text="Referees" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+        <VBox prefHeight="668.0" prefWidth="34.0" />
+        <VBox prefHeight="668.0" prefWidth="208.0">
+            <children>
+                <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="208.0" text="Seats" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="35.0" />
+                    </font>
+                </Label>
+            <TableView fx:id="seattable" prefHeight="208.0" prefWidth="208.0">
+              <columns>
+                <TableColumn fx:id="seatno" prefWidth="76.0" text="No." />
+                <TableColumn fx:id="seatavail" prefWidth="112.0" text="Available" />
+              </columns>
+            </TableView>
+                <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="208.0" text="Offers" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="35.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="offers" prefHeight="61.0" prefWidth="208.0">
+                    <columns>
+                        <TableColumn fx:id="offerscol" prefWidth="205.0" text="Status" />
+                    </columns>
+                </TableView>
+                <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="397.0" prefHeight="52.0" prefWidth="208.0" text="Stats" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="35.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="teamGD" layoutX="10.0" layoutY="607.0" prefHeight="61.0" prefWidth="208.0">
+                    <columns>
+                        <TableColumn fx:id="GDcol" prefWidth="205.0" text="Team Goal Difference" />
+                    </columns>
+                </TableView>
+                <Label prefHeight="17.0" prefWidth="266.0" />
+                <TableView fx:id="favplayer" layoutX="10.0" layoutY="673.0" prefHeight="61.0" prefWidth="208.0">
+                    <columns>
+                        <TableColumn fx:id="goalscol" prefWidth="59.0" text="Goals" />
+                        <TableColumn fx:id="playercol" prefWidth="146.0" text="Favourite Player" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+    </children>
+</HBox>

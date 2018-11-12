@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="668.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FM2017.RefereeController">
+   <children>
+      <HBox prefHeight="668.0" prefWidth="123.0" />
+      <VBox prefHeight="917.0" prefWidth="814.0">
+         <children>
+            <Label prefHeight="33.0" prefWidth="814.0" />
+            <Label alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="71.0" prefWidth="814.0" text="Upcoming Referee Games" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="55.0" />
+               </font>
+            </Label>
+            <TableView fx:id="upcotable" prefHeight="444.0" prefWidth="814.0">
+              <columns>
+                <TableColumn fx:id="upcorole" prefWidth="132.0" text="Role" />
+                <TableColumn fx:id="upcodate" minWidth="0.0" prefWidth="154.0" text="Date &amp; Time" />
+                  <TableColumn fx:id="upcostadium" minWidth="0.0" prefWidth="195.0" text="Stadium" />
+                  <TableColumn fx:id="upcoteams" minWidth="0.0" prefWidth="312.0" text="Teams" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</HBox>
