@@ -14,7 +14,8 @@
 ```bash
 $ git clone https://github.com/man0s/FM2017.git
 $ cd FM2017
-Execute FM2017.jar
+$ cd Executables
+$ java -jar FM2017.jar
 
 Requires Java SE Runtime Environment 8u144
 ```
