@@ -8,7 +8,6 @@
   Football league management system based in Java, JavaFX and MySQL.
 </p>
 </i>
-<br>
 
 ## Getting Started
 
